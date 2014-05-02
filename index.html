@@ -1,25 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
-		<link rel="stylesheet" type="text/css" href="src/style.css">
-		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<script type="text/javascript" src=""></script>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body{background-color: #0c0c0c;}
+
+			.container{
+				max-width: 980px;
+				width: 100%;
+				margin: auto;
+				padding: 0 20px;
+				overflow: auto;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box; 
+
+				font-family: sans-serif;
+			}
+			.planoDeFundo{
+				width: 50%;
+				height: 800px;
+				background-color: #0c0c0c;
+				top: 0;
+				display: inline;
+				float: left;
+				
+				background-attachment: fixed;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+
+			#first{
+				background-image:url("teste/conheca.jpg");
+			}
+
+			#second{
+				background-image:url("teste/transforme.jpg");
+			}
+
+			h1{
+				display: block;
+				text-align: center;
+				font-size: 30px;
+				width: auto;
+				color: #ffffff;
+				text-shadow:0 0 10px rgba(0,0,0,0.7);
+			}
+
+
+		</style>	
 	</head>
 	<body>
-		<header>
-			<div>LOREM IPSUM</div>
-		</header>
-		<section>
-			<div>
-				<h1>Parte I</h1>
-				<p>blablablablablabla</p>
-			</div>
-		</section>
-		<section>
-			<div>
-				<h1>Parte II</h1>
-				<p>blablablablablabla</p>
-			</div>
-		</section>
+		<div class="container">
+		<div class="planoDeFundo" id="first">
+			<h1 id="conheca"><strong>Conheça</strong></h1>
+		</div>
+		<div class="planoDeFundo" id="second">
+			<h1 id="transforme">Transforme</h1>
+		</div>
+	</div>
 	</body>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#first').click(function(){
+					$("#conheca").css("display", "block");
+					$(this).animate({width:"90%"},{"duration": 1000});
+					$("#second").animate({width:"10%"},{"duration": 1000});
+					$("#transforme").css("display", "none");
+				});
+
+				$('#second').click(function(){
+					$("#transforme").css("display", "block");
+					$(this).animate({width:"90%"},{"duration": 1000});
+					$("#first").animate({width:"10%"},{"duration": 1000});
+					$("#conheca").css("display", "none");
+				});
+			})			
+		</script>
 </html>
