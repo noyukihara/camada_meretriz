@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			body{background-color: #0c0c0c;}
 
@@ -16,7 +16,7 @@
 				-moz-box-sizing: border-box;
 				box-sizing: border-box; 
 
-				font-family: sans-serif;
+				font-family: "Oxygen",sans-serif;
 			}
 			.planoDeFundo{
 				width: 50%;
@@ -31,6 +31,10 @@
 				background-repeat: no-repeat;
 			}
 
+			.planoDeFundo :hover{
+				cursor: pointer;
+			}
+
 			#first{
 				background-image:url("http://www.nigerianmonitor.com/wp-content/uploads/2013/01/Prostitution.jpg");
 			}
@@ -42,20 +46,76 @@
 			h1{
 				display: block;
 				text-align: center;
-				font-size: 30px;
+				font-size: 4em;
 				width: auto;
 				color: #ffffff;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
+				line-height: 1000%;
 			}
 
+			.navbar{
+				background-color: #3c2e53;
+				position: fixed;
+				float: left;
+				top: 0px;
+				width: 100%;
+				max-width: 940px;
+				margin: auto;
+				height: 100px;
+			}
 
+			.nav{
+				display: inline;
+				margin: auto;
+				width: 10%;
+				font-size: 2em;
+				text-align: center;
+				color: #ffffff;
+				float: left;
+				padding-top: 10px;
+			}
+
+			.main{
+				display: inline;
+				margin: auto;
+				width: 40%;
+				float: left;
+			}
+
+			#flor{
+				display: block;
+				position: absolute;
+				
+				width: 10%;
+				height: auto;
+				top: 50%;
+				left: 45%;
+				float: left;
+				margin: auto;
+			}
+
+			#flor :hover{
+				cursor: pointer;
+			}
 		</style>	
 	</head>
 	<body>
 		<div class="container">
+			<nav>
+				<div class="navbar">
+					<div class="nav"><p>Menu</p></div>
+					<div class="nav"><p>Menu</p></div>
+					<div class="nav"><p>Menu</p></div>
+					<div class="nav main"><img id="logo" src="https://flic.kr/p/nr8jGd"></div>
+					<div class="nav"><p>Menu</p></div>
+					<div class="nav"><p>Menu</p></div>
+					<div class="nav"><p>Menu</p></div>
+				</div>
+			</nav>
 		<div class="planoDeFundo" id="first">
 			<h1 id="conheca"><strong>Conheça</strong></h1>
 		</div>
+		<img id="flor" src="https://flic.kr/p/nsTgKn">
 		<div class="planoDeFundo" id="second">
 			<h1 id="transforme">Transforme</h1>
 		</div>
@@ -69,6 +129,7 @@
 					$(this).animate({width:"90%"},{"duration": 1000});
 					$("#second").animate({width:"10%"},{"duration": 1000});
 					$("#transforme").css("display", "none");
+					$("#flor").fadeOut(1000);
 				});
 
 				$('#second').click(function(){
@@ -76,6 +137,13 @@
 					$(this).animate({width:"90%"},{"duration": 1000});
 					$("#first").animate({width:"10%"},{"duration": 1000});
 					$("#conheca").css("display", "none");
+					$("#flor").fadeOut(1000);
+				});
+				$('#logo').click(function(){
+					$("#first").animate({width:"50%"},{"duration": 1000});
+					$("#second").animate({width:"50%"},{"duration": 1000});
+					$("h1").css("display", "block");
+					$("#flor").fadeIn(2000);
 				});
 			})			
 		</script>
