@@ -51,7 +51,7 @@ body{background-color: #0c0c0c;}
 
 			/*Menu*/
 			.navbar{
-				background-color: #3c2e53;
+				background-image: linear-gradient(to bottom, #6E2A64, #2D2045);
 				position: fixed;
 				float: left;
 				top: 0px;
