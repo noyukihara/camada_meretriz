@@ -1,0 +1,132 @@
+body{background-color: #0c0c0c;}
+
+			.container{
+				max-width: 980px;
+				width: 100%;
+				margin: auto;
+				padding: 0 20px;
+				overflow: auto;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box; 
+
+				font-family: "Oxygen",sans-serif;
+			}
+			.planoDeFundo{
+				width: 50%;
+				min-height: 10000px;
+				height: auto;
+				background-color: #0c0c0c;
+				top: 0;
+				display: inline;
+				float: left;
+				
+				background-attachment: fixed;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+			}
+
+			.planoDeFundo :hover{
+				cursor: pointer;
+			}
+
+			#first{
+				background-image:url("http://www.nigerianmonitor.com/wp-content/uploads/2013/01/Prostitution.jpg");
+			}
+
+			#second{
+				background-image:url("http://www.ladolcepita.com/wp-content/uploads/2013/03/NYC-street2-1-of-1.jpg");
+			}
+
+			h1{
+				display: block;
+				text-align: center;
+				font-size: 4em;
+				width: auto;
+				color: #ffffff;
+				text-shadow:0 0 10px rgba(0,0,0,0.7);
+				padding-top: 300px;
+			}
+
+			/*Menu*/
+			.navbar{
+				background-color: #3c2e53;
+				position: fixed;
+				float: left;
+				top: 0px;
+				width: 100%;
+				max-width: 940px;
+				margin: auto;
+				height: 100px;
+				z-index: 100;
+				overflow: hidden;
+				box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+			}
+
+			.nav{
+				display: inline;
+				margin: auto;
+				width: 14.28%;
+				font-size: 2em;
+				text-align: center;
+				color: #ffffff;
+				float: left;
+				padding-top: 10px;
+			}
+
+			.top_lisias{
+				display: inline;
+				margin: auto;
+				width: 14.28%;
+				float: left;
+			}
+
+			/*Content*/
+			#flor{
+				display: block;
+				position: absolute;
+				
+				width: 12%;
+				height: auto;
+				top: 50%;
+				left: 45%;
+				float: left;
+				margin: auto;
+			}
+
+			.hidden{
+				display: none;
+			}
+			#flor :hover{
+				cursor: pointer;
+			}
+
+			.hidden_first{
+				display:none;
+			}
+			
+			.description{
+				text-align: center;
+				padding:10px;
+				color:#ffffff;
+
+				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
+				-moz-box-sizing:  3px 3px 5px 6px #ccc;
+				box-sizing:  3px 3px 5px 6px #ccc;
+			}
+			
+			#first_intro{
+				display:none;
+				}
+			#first_intro_next{
+				background-color: #141323;
+				width: 100%;
+				z-index: 50;
+				text-align: center;
+				padding: 20px;
+			}
+
+			#second_intro{
+				display:none;
+				}
