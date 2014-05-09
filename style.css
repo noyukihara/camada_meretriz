@@ -15,7 +15,7 @@
 body{
 	background-color: #0c0c0c;
 	font-family: "Oxygen",sans-serif;
-	font-weight: 400;
+	font-weight: 4000;
 }
 
 /*Classes para Trocar*/
@@ -58,11 +58,11 @@ body{
 			}
 
 			#first{
-				background-image:url("http://www.nigerianmonitor.com/wp-content/uploads/2013/01/Prostitution.jpg");
+				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-2_zps92097d81.png");
 			}
 
 			#second{
-				background-image:url("http://www.ladolcepita.com/wp-content/uploads/2013/03/NYC-street2-1-of-1.jpg");
+				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-1_zps4839e4d6.png");
 			}
 
 
@@ -75,14 +75,13 @@ body{
 				width: auto;
 				color: #ffffff;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
-				padding-top: 300px;
+				padding-top: 550px;
 				font-family: "Oxygen",sans-serif;
 				font-weight: 400;
 			}
 
 			/*Menu*/
 			.navbar{
-				background-image: linear-gradient(to bottom, #6E2A64, #2D2045);
 				position: fixed;
 				float: left;
 				top: 0px;
@@ -91,6 +90,7 @@ body{
 				height: 100px;
 				z-index: 100;
 				overflow: hidden;
+				font-weight: 400;
 				box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
 			}
 
