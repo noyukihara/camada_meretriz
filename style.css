@@ -82,7 +82,6 @@ body{
 
 			/*Menu*/
 			.navbar{
-				background-image: linear-gradient(to bottom, #6E2A64, #2D2045);
 				position: fixed;
 				float: left;
 				top: 0px;
@@ -91,7 +90,6 @@ body{
 				height: 100px;
 				z-index: 100;
 				overflow: hidden;
-				box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
 			}
 
 			.nav{
@@ -104,7 +102,13 @@ body{
 				padding-top: 10px;
 			}
 
-			.p1{
+			p{
+				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
+				-moz-box-sizing:  3px 3px 5px 6px #ccc;
+				box-sizing:  3px 3px 5px 6px #ccc;
+			}
+
+			.projeto ,.p1{
 				float: right;
 			}
 
@@ -113,6 +117,13 @@ body{
 				margin: auto;
 				width: 14.28%;
 				float: left;
+				padding-left: 20px;
+				padding-top: 20px;
+
+			}
+
+			.top_lisias:hover{
+				cursor: pointer;
 			}
 
 			/*Content*/
@@ -154,11 +165,11 @@ body{
 				}
 			
 			#first_intro_next{
-				background-color: #141323;
 				width: 100%;
 				z-index: 50;
 				text-align: center;
 				padding: 20px;
+				padding-top: 250px;
 			}
 
 			#second_intro{

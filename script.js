@@ -8,36 +8,40 @@ $(document).ready(function(){
 		$(id).css("display", "block");
 	};
 
+	hide(".p1");
 	
 	$('#first').click(function(){
-		$("#conheca").css("display", "block");
+		show("#conheca");
 			$(this).animate({width:"90%"},{"duration": 1000});
 		$("#second").animate({width:"10%"},{"duration": 1000});
 		hide("#transforme");
 		$("#flor").fadeOut(1000);
 		show("#first_intro");
 		hide("#second_intro");
-
-		$("#first_intro_next").css("display","block");
+		show(".p1");
+		show("#first_intro_next");
 	});
 
 	$('#second').click(function(){
-		$("#transforme").css("display", "block");
+		show("#transforme");
 			$(this).animate({width:"90%"},{"duration": 1000});
 		$("#first").animate({width:"10%"},{"duration": 1000});
 		hide("#conheca");
 		$("#flor").fadeOut(1000);
 		hide("#first_intro");
 		show("#second_intro");
+		hide("#first_intro_next");
 	});
 		
 	$('#logo').click(function(){
 		$("#first").animate({width:"50%"},{"duration": 1000});
 		$("#second").animate({width:"50%"},{"duration": 1000});
-		$("h1").css("display", "block");
+		show("h1");
 		$("#flor").fadeIn(2000);
-		$("#first_intro").css("display", "none");
-		$("#second_intro").css("display", "none");
+		hide("#first_intro");
+		hide("#second_intro");
+		hide("#first_intro_next");
+		hide(".p1");
 	});
 });			
 
