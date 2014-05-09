@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	
 	$('#first').click(function(){
-		$("#conheca").css("display", "block");
+		show("#conheca");
 			$(this).animate({width:"90%"},{"duration": 1000});
 		$("#second").animate({width:"10%"},{"duration": 1000});
 		hide("#transforme");
@@ -18,11 +18,11 @@ $(document).ready(function(){
 		show("#first_intro");
 		hide("#second_intro");
 
-		$("#first_intro_next").css("display","block");
+		show("#first_intro_next");
 	});
 
 	$('#second').click(function(){
-		$("#transforme").css("display", "block");
+		show("#transforme");
 			$(this).animate({width:"90%"},{"duration": 1000});
 		$("#first").animate({width:"10%"},{"duration": 1000});
 		hide("#conheca");
@@ -34,10 +34,10 @@ $(document).ready(function(){
 	$('#logo').click(function(){
 		$("#first").animate({width:"50%"},{"duration": 1000});
 		$("#second").animate({width:"50%"},{"duration": 1000});
-		$("h1").css("display", "block");
+		show("h1");
 		$("#flor").fadeIn(2000);
-		$("#first_intro").css("display", "none");
-		$("#second_intro").css("display", "none");
+		hide("#first_intro");
+		hide("#second_intro");
 	});
 });			
 
