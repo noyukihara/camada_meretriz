@@ -20,6 +20,7 @@ $(document).ready(function(){
 		hide("#second_intro");
 		show(".p1");
 		show("#first_intro_next");
+		hide("#second_intro_next");
 	});
 
 	$('#second').click(function(){
@@ -31,6 +32,7 @@ $(document).ready(function(){
 		hide("#first_intro");
 		show("#second_intro");
 		hide("#first_intro_next");
+		show("#second_intro_next");
 	});
 		
 	$('#logo').click(function(){
