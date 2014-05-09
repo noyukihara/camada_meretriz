@@ -8,6 +8,7 @@ $(document).ready(function(){
 		$(id).css("display", "block");
 	};
 
+	hide(".p1");
 	
 	$('#first').click(function(){
 		show("#conheca");
@@ -17,7 +18,7 @@ $(document).ready(function(){
 		$("#flor").fadeOut(1000);
 		show("#first_intro");
 		hide("#second_intro");
-
+		show(".p1");
 		show("#first_intro_next");
 	});
 
@@ -29,6 +30,7 @@ $(document).ready(function(){
 		$("#flor").fadeOut(1000);
 		hide("#first_intro");
 		show("#second_intro");
+		hide("#first_intro_next");
 	});
 		
 	$('#logo').click(function(){
@@ -38,6 +40,8 @@ $(document).ready(function(){
 		$("#flor").fadeIn(2000);
 		hide("#first_intro");
 		hide("#second_intro");
+		hide("#first_intro_next");
+		hide(".p1");
 	});
 });			
 
