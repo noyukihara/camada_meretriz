@@ -173,3 +173,7 @@ body{
 			#second_intro{
 				display:none;
 				}
+	.video{
+		background-color: #0f0f0f;
+		height: 500px;
+	}
