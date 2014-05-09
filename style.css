@@ -58,11 +58,11 @@ body{
 			}
 
 			#first{
-				background-image:url("http://www.nigerianmonitor.com/wp-content/uploads/2013/01/Prostitution.jpg");
+				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-2_zps92097d81.png");
 			}
 
 			#second{
-				background-image:url("http://www.ladolcepita.com/wp-content/uploads/2013/03/NYC-street2-1-of-1.jpg");
+				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-1_zps4839e4d6.png");
 			}
 
 
@@ -75,9 +75,13 @@ body{
 				width: auto;
 				color: #ffffff;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
+<<<<<<< HEAD
 				padding-top: 300px;
 				font-family: "Oxygen",sans-serif;
 				font-weight: 400;
+=======
+				padding-top: 550px;
+>>>>>>> 0b00b844f68925c0512d9c63a694fd7b8932b4ed
 			}
 
 			/*Menu*/
