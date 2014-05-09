@@ -1,17 +1,43 @@
-body{background-color: #0c0c0c;}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/eAWT4YudG0otf3rlsJD6zOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 
+
+body{
+	background-color: #0c0c0c;
+	font-family: "Oxygen",sans-serif;
+	font-weight: 400;
+}
+
+/*Classes para Trocar*/
+	.hide{
+		display: none;
+	}
+
+	.show{
+		display: block;
+	}
+	
 			.container{
-				max-width: 1600px;
+				max-width: 2100px;
 				width: 100%;
 				margin: auto;
-				padding: 0 20px;
 				overflow: auto;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				box-sizing: border-box; 
-
 				font-family: "Oxygen",sans-serif;
 			}
+			
 			.planoDeFundo{
 				width: 50%;
 				min-height: 10000px;
@@ -32,13 +58,16 @@ body{background-color: #0c0c0c;}
 			}
 
 			#first{
-				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-2_zps92097d81.png");
+				background-image:url("http://www.nigerianmonitor.com/wp-content/uploads/2013/01/Prostitution.jpg");
 			}
 
 			#second{
-				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-1_zps4839e4d6.png");
+				background-image:url("http://www.ladolcepita.com/wp-content/uploads/2013/03/NYC-street2-1-of-1.jpg");
 			}
 
+
+
+			/**Estrutura do Site*/
 			h1{
 				display: block;
 				text-align: center;
@@ -46,7 +75,9 @@ body{background-color: #0c0c0c;}
 				width: auto;
 				color: #ffffff;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
-				padding-top: 550px;
+				padding-top: 300px;
+				font-family: "Oxygen",sans-serif;
+				font-weight: 400;
 			}
 
 			/*Menu*/
@@ -56,7 +87,6 @@ body{background-color: #0c0c0c;}
 				float: left;
 				top: 0px;
 				width: 100%;
-				max-width: 940px;
 				margin: auto;
 				height: 100px;
 				z-index: 100;
@@ -71,8 +101,11 @@ body{background-color: #0c0c0c;}
 				font-size: 2em;
 				text-align: center;
 				color: #ffffff;
-				float: left;
 				padding-top: 10px;
+			}
+
+			.p1{
+				float: right;
 			}
 
 			.top_lisias{
@@ -119,6 +152,7 @@ body{background-color: #0c0c0c;}
 			#first_intro{
 				display:none;
 				}
+			
 			#first_intro_next{
 				background-color: #141323;
 				width: 100%;
