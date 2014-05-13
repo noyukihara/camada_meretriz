@@ -10,6 +10,20 @@ $(document).ready(function(){
 
 	hide(".p1");
 	
+	/*Função de Abaixar Rápido*/
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
 	$('#first').click(function(){
 		show("#conheca");
 			$(this).animate({width:"90%"},{"duration": 1000});
@@ -20,6 +34,8 @@ $(document).ready(function(){
 		hide("#second_intro");
 		show(".p1");
 		show("#first_intro_next");
+		hide("#second_intro_next");
+		show("#first_cotidiano");
 	});
 
 	$('#second').click(function(){
@@ -31,6 +47,7 @@ $(document).ready(function(){
 		hide("#first_intro");
 		show("#second_intro");
 		hide("#first_intro_next");
+		show("#second_intro_next");
 	});
 		
 	$('#logo').click(function(){
