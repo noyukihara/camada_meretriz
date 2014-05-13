@@ -30,12 +30,10 @@ $(document).ready(function(){
 		$("#second").animate({width:"10%"},{"duration": 1000});
 		hide("#transforme");
 		$("#flor").fadeOut(1000);
-		show("#first_intro");
-		hide("#second_intro");
+		
+		show(".first");
+		hide(".second");
 		show(".p1");
-		show("#first_intro_next");
-		hide("#second_intro_next");
-		show("#first_cotidiano");
 	});
 
 	$('#second').click(function(){
@@ -44,10 +42,8 @@ $(document).ready(function(){
 		$("#first").animate({width:"10%"},{"duration": 1000});
 		hide("#conheca");
 		$("#flor").fadeOut(1000);
-		hide("#first_intro");
-		show("#second_intro");
-		hide("#first_intro_next");
-		show("#second_intro_next");
+		hide(".first");
+		show(".second");
 	});
 		
 	$('#logo').click(function(){
@@ -55,9 +51,8 @@ $(document).ready(function(){
 		$("#second").animate({width:"50%"},{"duration": 1000});
 		show("h1");
 		$("#flor").fadeIn(2000);
-		hide("#first_intro");
-		hide("#second_intro");
-		hide("#first_intro_next");
+		hide(".first");
+		hide(".second");
 		hide(".p1");
 	});
 });			

@@ -20,12 +20,12 @@ body{
 }
 
 /*Classes para Trocar*/
-	.hide{
+	.first{
 		display: none;
 	}
 
-	.show{
-		display: block;
+	.second{
+		display: none;
 	}
 	
 			.container{
@@ -144,23 +144,16 @@ body{
 				cursor: pointer;
 			}
 
-			.hidden_first{
-				display:none;
-			}
-			
+			/*Primeira parte - Conhecer*/			
 			.description{
 				text-align: center;
-				padding:10px 20% 10px 20%;
+				padding:10px 12.55% 10px 12.55%;
 				color:#ffffff;
 
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
 				-moz-box-sizing:  3px 3px 5px 6px #ccc;
 				box-sizing:  3px 3px 5px 6px #ccc;
 			}
-			
-			#first_intro{
-				display:none;
-				}
 			
 			.intro{
 				width: 100%;
@@ -169,11 +162,23 @@ body{
 				padding: 20px;
 				padding-top: 250px;
 			}
-
-			#second_intro{
-				display:none;
-				}
-	.video{
-		background-color: #0f0f0f;
-		height: 500px;
-	}
+			
+			.video{
+				background-color: #2D2045;
+				-webkit-box-sizing:  3px 0px 0px 0px #ccc;
+				-moz-box-sizing:  3px 0px 0px 0px #ccc;
+				box-sizing:  3px 0px 0px 0px #ccc;
+				
+			}
+	
+			#cotidiano_video{
+				width: 75%;
+				margin: auto;
+				display: block;
+			}
+			
+			.share{
+				min-width: 44px;
+				width:5%;
+				float:right;
+			}
