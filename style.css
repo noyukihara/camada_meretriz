@@ -182,3 +182,25 @@ body{
 				width:5%;
 				float:right;
 			}
+
+			/*Galeria*/
+			.relatos{
+				width: 100%;
+				background-color: #2D2045;
+			}
+			.gallery{
+				width: 100%;
+				float: left;
+				display: block;
+			}
+
+			.galleryItem{
+				display: inline;
+				border: 5%;
+				float: left;
+			}
+
+			#repOne{
+				width: 50%;
+				background-color: #ffffff;
+			}
