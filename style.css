@@ -168,6 +168,7 @@ body{
 				-webkit-box-sizing:  3px 0px 0px 0px #ccc;
 				-moz-box-sizing:  3px 0px 0px 0px #ccc;
 				box-sizing:  3px 0px 0px 0px #ccc;
+				clear: both;
 				
 			}
 	
@@ -175,18 +176,23 @@ body{
 				width: 75%;
 				margin: auto;
 				display: block;
+				position: static;
 			}
 			
 			.share{
-				min-width: 44px;
-				width:5%;
+				width: 44px;
+				margin: 20px;
 				float:right;
+				display: block;
+				position: static;
 			}
 
 			/*Galeria*/
 			.relatos{
+				top: 0px;
 				width: 100%;
 				background-color: #2D2045;
+				clear: both;
 			}
 			.gallery{
 				width: 100%;
@@ -196,11 +202,46 @@ body{
 
 			.galleryItem{
 				display: inline;
-				border: 5%;
 				float: left;
+				margin-left: 50px;
+				margin: auto;
 			}
-
+			/*DIVS da galeria*/
 			#repOne{
-				width: 50%;
 				background-color: #ffffff;
+				height: 200%;
+				border: 30px;			}
+			#repTwo{
+				background-color: #ffffff;
+				border: 30px;	
+				height: 200%;
+			}
+			#repThree{
+				background-color: #ffffff;
+				border: 30px;	
+				height: 200%;
+			}
+			#repFour{
+				background-color: #ffffff;
+				border: 30px;
+				height: 100%;	
+			}
+			#repFive{
+				background-color: #ffffff;
+				border: 30px;
+				height: 200%;	
+			}
+			#repSix{
+				background-color: #ffffff;
+				border: 30px;
+				height: 100%;	
+			}
+			#repSeven{
+				background-color: #ffffff;
+				border: 30px;
+				height: 0%;	
+			}
+			#repEight{
+				background-color: #ffffff;
+				border: 30px;	
 			}
