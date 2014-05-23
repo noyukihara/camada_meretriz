@@ -75,10 +75,14 @@ body{
 				font-size: 4em;
 				width: auto;
 				color: #ffffff;
+				padding-top: 100px;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
-				padding-top: 300px;
 				font-family: "Oxygen",sans-serif;
 				font-weight: 400;
+			}
+
+			.firstLineHeading{
+				padding-top: 300px;
 			}
 
 			/*Menu*/
@@ -170,28 +174,27 @@ body{
 				padding-top: 250px;
 			}
 			
-			.video{
+			.secondLayer{
 				background-color: #2D2045;
 				-webkit-box-sizing:  3px 0px 0px 0px #ccc;
 				-moz-box-sizing:  3px 0px 0px 0px #ccc;
 				box-sizing:  3px 0px 0px 0px #ccc;
 				clear: both;
-				
+				float: left;
+				z-index: 2;				
 			}
 	
 			#cotidiano_video{
-				width: 75%;
+				width: 100%;
 				margin: auto;
 				display: block;
-				position: static;
 			}
 			
 			.share{
 				width: 44px;
-				margin: 20px;
+				margin:5px 20px 0 0;
 				float:right;
 				display: block;
-				position: static;
 			}
 
 			/*Galeria*/
@@ -205,54 +208,60 @@ body{
 				width: 100%;
 				float: left;
 				display: block;
+				margin: auto;
 			}
 
 			.galleryItem{
-				display: inline;
+				display: inline-block;
 				float: left;
-				margin-left: 50px;
 				margin: auto;
+				margin: 5% 5% 0 5%;
+
 			}
 			/*DIVS da galeria*/
+			.imgItem{
+				display: block;
+				width: 100%;
+			}
 			#repOne{
 				background-color: #ffffff;
-				height: 200%;
 				border: 30px;			}
 			#repTwo{
 				background-color: #ffffff;
 				border: 30px;	
-				height: 200%;
 			}
 			#repThree{
 				background-color: #ffffff;
 				border: 30px;	
-				height: 200%;
 			}
 			#repFour{
 				background-color: #ffffff;
 				border: 30px;
-				height: 100%;	
 			}
 			#repFive{
 				background-color: #ffffff;
 				border: 30px;
-				height: 200%;	
 			}
 			#repSix{
 				background-color: #ffffff;
 				border: 30px;
-				height: 100%;	
 			}
 			#repSeven{
 				background-color: #ffffff;
 				border: 30px;
-				height: 0%;	
 			}
 			#repEight{
 				background-color: #ffffff;
 				border: 30px;	
 			}
 
+			.galleryItem p{
+				display: none;
+			}
+
+			.galleryItem:hover p{
+				display: block;
+			}
 
 			/* PARTE 2 - TRANSFOME*/
 
