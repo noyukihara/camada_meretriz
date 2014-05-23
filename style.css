@@ -109,6 +109,13 @@ body{
 				box-sizing:  3px 3px 5px 6px #ccc;
 			}
 
+			a {
+				color: #fff;
+				text-decoration: none;
+
+			}
+
+
 			.projeto ,.p1, .p2{
 				float: right;
 			}
