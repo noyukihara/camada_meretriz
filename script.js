@@ -9,7 +9,8 @@ $(document).ready(function(){
 	};
 
 	hide(".p1");
-	
+	hide(".p2");
+
 	/*Função de Abaixar Rápido*/
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
@@ -44,6 +45,7 @@ $(document).ready(function(){
 		$("#flor").fadeOut(1000);
 		hide(".first");
 		show(".second");
+		show(".p2");
 	});
 		
 	$('#logo').click(function(){
