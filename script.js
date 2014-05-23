@@ -35,6 +35,7 @@ $(document).ready(function(){
 		show(".first");
 		hide(".second");
 		show(".p1");
+		hide(".p2")
 	});
 
 	$('#second').click(function(){
@@ -46,6 +47,7 @@ $(document).ready(function(){
 		hide(".first");
 		show(".second");
 		show(".p2");
+		hide(".p1");
 	});
 		
 	$('#logo').click(function(){
@@ -56,6 +58,7 @@ $(document).ready(function(){
 		hide(".first");
 		hide(".second");
 		hide(".p1");
+		hide(".p2");
 	});
 });			
 
