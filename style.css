@@ -245,3 +245,14 @@ body{
 				background-color: #ffffff;
 				border: 30px;	
 			}
+
+
+			/* PARTE 2 - TRANSFOME*/
+
+			.noticias{
+				background-color: #E2A9F3;
+				webkit-box-sizing:  3px 0px 0px 0px #ccc;
+				-moz-box-sizing:  3px 0px 0px 0px #ccc;
+				box-sizing:  3px 0px 0px 0px #ccc;
+
+			}
