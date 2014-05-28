@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	 $('a.fancybox').fancybox();
 	
 	var hide= function(id){
 		$(id).css("display", "none");

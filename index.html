@@ -5,9 +5,12 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
 
 		<script src="jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -50,40 +53,57 @@
 
 				<section class="relatos first secondLayer">
 						<h1 id="first_relatos">relatos</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sapien a leo eleifend, in sodales ligula gravida. Duis vestibulum, sapien at bibendum dignissim, purus est sollicitudin turpis, convallis malesuada ligula quam vel magna</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sapien a leo eleifend, in sodales ligula gravida. Duis vestibulum, sapien at bibendum dignissim, purus est sollicitudin turpis, convallis malesuada ligula quam vel magna</p>
 						<div class="gallery">
-							<div class="galleryItem col-xs-2" id="repOne">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-3" id="repTwo">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-2" id="repThree">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-3" id="repFour">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-4" id="repFive">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testret.png">
-							</div>
-							<div class="galleryItem col-xs-2" id="repSix">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-2" id="repSeven">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-							</div>
-							<div class="galleryItem col-xs-5" id="repEight">
-								<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
-								<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testequad.png" alt=" photo testequad.png"/>
-						</div>
+							<span class="gallery_spacer" id="spacer_1"></span>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-2" id="repOne">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-3" id="repTwo">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-2" id="repThree">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-3" id="repFour">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-4" id="repFive">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testret.png">
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-5" id="repSix">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/testret.png" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-2" id="repSeven">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
+							<a href="iframe.html" class="fancybox fancybox.iframe">
+								<div class="galleryItem col-xs-5" id="repEight">
+									<p class="galleryDescription">"Lorem Ipsum dolor sit amet"</p>
+									<img class="imgItem" src="http://i1098.photobucket.com/albums/g375/Noyukihara/10169046_10152142815541538_1888197627_n.jpg" alt=" photo testequad.png"/>
+								</div>
+							</a>
 					</div>
 				</section>
 			

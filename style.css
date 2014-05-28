@@ -212,10 +212,11 @@ body{
 			}
 
 			.galleryItem{
-				display: inline-block;
+				display: block;
 				float: left;
 				margin: auto;
-				margin: 5% 5% 0 5%;
+				margin: 0% 5% 2% 5%;
+				
 
 			}
 			/*DIVS da galeria*/
@@ -225,7 +226,8 @@ body{
 			}
 			#repOne{
 				background-color: #ffffff;
-				border: 30px;			}
+				border: 30px;
+				}
 			#repTwo{
 				background-color: #ffffff;
 				border: 30px;	
@@ -261,12 +263,21 @@ body{
 
 			.galleryItem:hover p{
 				display: block;
+				position: absolute;
+				top: 30%;
+				font-size: 1.5em;
+				font-weight: bold;
+				z-index: 100;
+				color: #ffffff;
+				padding: 5%;
+				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
+				-moz-box-sizing:  3px 3px 5px 6px #ccc;
+				box-sizing:  3px 3px 5px 6px #ccc;
 			}
 
 			/* PARTE 2 - TRANSFOME*/
 
 			#second_noticias{
-				
 				height:800px;
 				width: 1300px;
 				background-color: #0B0B3B;
