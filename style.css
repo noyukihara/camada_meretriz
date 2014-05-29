@@ -157,6 +157,7 @@ body{
 
 			/*Primeira parte - Conhecer*/			
 			.description{
+				float: left;
 				text-align: center;
 				padding:10px 12.55% 10px 12.55%;
 				color:#ffffff;
@@ -273,6 +274,33 @@ body{
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
 				-moz-box-sizing:  3px 3px 5px 6px #ccc;
 				box-sizing:  3px 3px 5px 6px #ccc;
+			}
+
+			.whoDid{
+				display: block;
+				margin: auto;
+				left: 25%;
+			}
+
+			.collaborator{
+				display: inline-block;
+				position: relative;
+				text-align: center;
+				margin: 5%;
+				width: 30%;
+			}
+
+			.left{
+				float: left;
+			}
+
+			.right{
+				float: right;
+			}
+
+			.colab_photo{
+				width: 100%;
+				border-radius: 100%;
 			}
 
 			/* PARTE 2 - TRANSFOME*/
