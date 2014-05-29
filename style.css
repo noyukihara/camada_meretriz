@@ -185,12 +185,15 @@ body{
 				z-index: 2;				
 			}
 	
+<<<<<<< HEAD
+=======
 			#cotidiano_video{
 				width: 100%;
 				margin: auto;
 				display: block;
 			}
 			
+>>>>>>> parent of 12c013c... new iFrame
 			.share{
 				width: 44px;
 				margin:5px 20px 0 0;
