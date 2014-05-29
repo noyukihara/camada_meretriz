@@ -44,7 +44,27 @@
 					<h1 id="cotidiano">cotidiano</h1>
 					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sapien a leo eleifend, in sodales ligula gravida. Duis vestibulum, sapien at bibendum dignissim, purus est sollicitudin turpis, convallis malesuada ligula quam vel magna</p>
                     
-                     <video class=" first video" src="//www.youtube.com/embed/7nqEzWxopb0" controls></video>
+                     <style>
+                     	.embed-container {
+                     		position: relative; 
+                     		padding-bottom: 56.25%;
+                     		height: 0;
+                     		overflow: hidden;
+                     		max-width: 100%;
+                     		height: auto;
+                     	} 
+                     	.embed-container iframe, .embed-container object, .embed-container embed {
+                     			position: absolute;
+                     			top: 0;
+                     			left: 0;
+                     			width: 100%;
+                     			height: 100%;
+                     		}
+                     </style>
+                     <div class='embed-container'>
+                     	<iframe src='http://www.youtube.com/embed/7nqEzWxopb0' frameborder='0' allowfullscreen>
+                     	</iframe>
+                     </div>
 
                 </section>
 
