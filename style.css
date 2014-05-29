@@ -41,7 +41,7 @@ body{
 			
 			.planoDeFundo{
 				width: 50%;
-				min-height: 10000px;
+				min-height: 768px;
 				height: auto;
 				background-color: #0c0c0c;
 				top: 0;
