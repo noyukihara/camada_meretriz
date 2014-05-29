@@ -1,6 +1,12 @@
 $(document).ready(function(){
-
-	 $('a.fancybox').fancybox();
+	/*Fancybox - Configurações*/
+	 $('a.fancybox').fancybox()
+	 $(".fancybox").fancybox({
+		 	padding: 0,
+		 	width: 	"100%",
+		 	height: "70%",
+		 	overlayOpacity: 0.5,
+		 });
 	
 	var hide= function(id){
 		$(id).css("display", "none");
