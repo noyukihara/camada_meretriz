@@ -37,8 +37,6 @@ $(document).ready(function(){
 	 $('a.fancybox').fancybox()
 	 $(".fancybox").fancybox({
 		 	padding: 0,
-		 	width: 	"100%",
-		 	height: "100%",
 		 	overlayOpacity: 0.5,
 		 });
 	
