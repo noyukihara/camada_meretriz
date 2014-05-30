@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#banner_noticias").carousel();
 	/*Fancybox - Configurações*/
 	 $('a.fancybox').fancybox()
 	 $(".fancybox").fancybox({

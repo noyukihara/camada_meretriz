@@ -41,10 +41,9 @@
         					<li class="p1"><a href="#projeto">projeto</a></li>
         					<li class="p2"><a href="#second">transforme</a></li>
         					<li class="dropdown p2">
-        						<a class="dropdown-toggle" data-toggle="dropdown" href="#">noticias<b class="caret"></b></a>
+        						<a class="dropdown-toggle" data-toggle="dropdown" href="#second_noticias">noticias<b class="caret"></b></a>
         							<ul class="dropdown-menu">
-        								<li class="p2"><a href="#second_noticias">notícias</a></li>
-        								<li class="divider"></li>
+        													
         								<li class="p2"><a href="#">leis</a></li>
         								<li class="p2"><a href="#">comunidade</a></li>
         								<li class="p2"><a href="#">ativismo</a></li>
@@ -133,22 +132,22 @@
 				<section class="first secondLayer">
 					<h1 id="projeto">projeto</h1>
 					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sapien a leo eleifend, in sodales ligula gravida. Duis vestibulum, sapien at bibendum dignissim, purus est sollicitudin turpis, convallis malesuada ligula quam vel magna</p>
-					<div class="col-lg-5 col-lg-offset-4">
-						<div class="collaborator col-lg-4">
+					<div class="col-lg-5 col-lg-offset-4 col-md-9 col-md-offset-1 col-xs-5">
+						<div class="collaborator col-lg-4 col-md-2 col-md-offset-1 col-xs-2">
 							<img class="colab_photo" src="face.jpg"/>
-							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="description col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 						</div>
-						<div class="collaborator col-lg-4 col-lg-offset-2">
+						<div class="collaborator col-lg-4 col-md-2 col-md-offset-1 col-lg-offset-2 col-xs-2">
 							<img class="colab_photo" src="face.jpg"/>
-							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="description col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 						</div>
-						<div class="collaborator col-lg-4">
+						<div class="collaborator col-lg-4 col-md-2 col-md-offset-1 col-xs-2">
 							<img class="colab_photo" src="face.jpg"/>
-							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="description col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 						</div>
-						<div class="collaborator col-lg-4 col-lg-offset-2">
+						<div class="collaborator col-lg-4 col-md-2 col-md-offset-1 col-lg-offset-2 col-xs-2">
 							<img class="colab_photo" src="face.jpg"/>
-							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="description col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 						</div>
 					</div>
 					<p class="description block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sapien a leo eleifend, in sodales ligula gravida. Duis vestibulum, sapien at bibendum dignissim, purus est sollicitudin turpis, convallis malesuada ligula quam vel magna</p>
@@ -163,8 +162,47 @@
                 <div class="second col-lg-2 col-lg-push-5"><a href="#second_noticias"><img class="seta" src="http://i1098.photobucket.com/albums/g375/Noyukihara/arrow.png"/></a></div>
 
              <section class="second col-lg-12 secondLayer" id = "second_noticias">
-             	<div class="noticias">
-
+             	<section class="col-lg-10">
+				    <div id="banner_noticias" class="carousel slide" data-interval="3000" data-ride="carousel">
+				        <!-- Carousel indicators -->
+				        <ol class="carousel-indicators">
+				            <li data-target="#banner_noticias" data-slide-to="0" class="active"></li>
+				            <li data-target="banner_noticias" data-slide-to="1"></li>
+				            <li data-target="banner_noticias" data-slide-to="2"></li>
+				        </ol>   
+				        <!-- Carousel items -->
+				        <div class="carousel-inner">
+				            <div class="active item">
+				                <h2>Slide 1</h2>
+				                <div class="carousel-caption">
+				                  <h3>First slide label</h3>
+				                  <p>Lorem ipsum dolor sit amet consectetur…</p>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <h2>Slide 2</h2>
+				                <div class="carousel-caption">
+				                  <h3>Second slide label</h3>
+				                  <p>Aliquam sit amet gravida nibh, facilisis gravida…</p>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <h2>Slide 3</h2>
+				                <div class="carousel-caption">
+				                  <h3>Third slide label</h3>
+				                  <p>Praesent commodo cursus magna vel…</p>
+				                </div>
+				            </div>
+				        </div>
+				        <!-- Carousel nav -->
+				        <a class="carousel-control left" href="#banner_noticias" data-slide="prev">
+				            <span class="glyphicon glyphicon-chevron-left"></span>
+				        </a>
+				        <a class="carousel-control right" href="banner_noticias" data-slide="next">
+				            <span class="glyphicon glyphicon-chevron-right"></span>
+				        </a>
+				    </div>
+				</section>
              		<div class="col-lg-10 col-lg-offset-1">
 
              			<a href="">
