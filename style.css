@@ -61,6 +61,7 @@ body{
 				width: 50%;
 				min-height: 768px;
 				height: auto;
+				padding: 0;
 				background-color: #0c0c0c;
 				top: 0;
 				display: inline;
@@ -183,6 +184,7 @@ body{
 				padding:10px 12.55% 10px 12.55%;
 				color:#ffffff;
 				line-height: 1.5em;
+				font-size: 1.5em;
 
 
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
@@ -190,14 +192,7 @@ body{
 				box-sizing:  3px 3px 5px 6px #ccc;
 			}
 			
-			.intro{
-				width: 100%;
-				z-index: 50;
-				text-align: center;
-				padding: 20px;
-				padding-top: 250px;
-			}
-			
+					
 			.secondLayer{
 				background-color: #2D2045;
 				-webkit-box-sizing:  3px 0px 0px 0px #ccc;
@@ -230,55 +225,16 @@ body{
 			}
 			.gallery{
 				width: 100%;
-				float: left;
-				display: block;
-				margin: auto;
+				display: block;	
 			}
 
 			.galleryItem{
-				display: block;
-				float: left;
-				margin: auto;
-				margin: 0% 3% 2% 3%;
-				
-
+				padding-top: 15px;
 			}
 			/*DIVS da galeria*/
-			.imgItem{
+			img{
 				display: block;
 				width: 100%;
-			}
-			#repOne{
-				background-color: #ffffff;
-				border: 30px;
-				}
-			#repTwo{
-				background-color: #ffffff;
-				border: 30px;	
-			}
-			#repThree{
-				background-color: #ffffff;
-				border: 30px;	
-			}
-			#repFour{
-				background-color: #ffffff;
-				border: 30px;
-			}
-			#repFive{
-				background-color: #ffffff;
-				border: 30px;
-			}
-			#repSix{
-				background-color: #ffffff;
-				border: 30px;
-			}
-			#repSeven{
-				background-color: #ffffff;
-				border: 30px;
-			}
-			#repEight{
-				background-color: #ffffff;
-				border: 30px;	
 			}
 
 			.galleryItem p{
@@ -299,26 +255,17 @@ body{
 				box-sizing:  3px 3px 5px 6px #ccc;
 			}
 
-			.whoDid{
-				display: block;
-				margin: auto;
-				left: 25%;
-			}
-
-			.collaborator{
+			/*.collaborator{
 				display: inline-block;
 				position: relative;
 				text-align: center;
 				margin: 5%;
 				width: 30%;
-			}
+			}*/
 
-			.left{
+			.block{
 				float: left;
-			}
-
-			.right{
-				float: right;
+				display: block;
 			}
 
 			.colab_photo{
@@ -328,19 +275,7 @@ body{
 
 			/* PARTE 2 - TRANSFOME*/
 
-			#second_noticias{
-				height:800px;
-				width: 100%;
-				background-color: #0B0B3B;
-			}
-
-			#fotos_noticias{
-				width: 20%;
-				height: 20%;
-	            position: left;
-			}
-
-			.leis{
+			/*.leis{
 				display: block;
 				float: left;
 				margin: auto;
@@ -362,5 +297,5 @@ body{
 				display: block;
 				float: right;
 				margin: auto;
-			}
+			}*/
 
