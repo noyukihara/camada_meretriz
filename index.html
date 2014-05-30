@@ -2,11 +2,13 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
+		
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="boot.css">
 		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+		<link rel="stylesheet" href="style.css">
 
+		<script type="text/javascript" src="bootstrap.js"></script>
 		<script src="jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
@@ -15,11 +17,44 @@
 	<body>
 		<div class="container">
 			
-			<nav>
-				<div class="navbar container">
-					<div class="nav top_lisias"><a href="#first"><img id="logo" src="http://i1098.photobucket.com/albums/g375/Noyukihara/logo.png"></a></div>
-					
-					<div class="nav projeto"><a href="#projeto">projeto</a></div>
+			<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+     					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_content">
+        					<span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+     			 		 </button>
+      					<a class="navbar-brand" href="#"><div id="logo"><img src="http://i1098.photobucket.com/albums/g375/Noyukihara/logo.png"/></div></a>
+    				</div>
+
+    				<div class="collapse navbar-collapse" id="menu_content">
+      					<ul class="nav navbar-nav">
+        					<li class="p1"><a href="#first">conheça</a></li>
+        					<li class="p1"><a href="#first_cotidiano">cotidiano</a</li>
+        					<li class="p1"><a href="#first_relatos">relatos</a></li>
+        					<li class="p1"><a href="#projeto">projeto</a></li>
+        					<li class="p2"><a href="#second">transforme</a></li>
+        					<li class="p2 dropdown">
+        						<a class="dropdown-toggle" data-toggle="dropdown" href="#">noticias<b class="caret"></b></a>
+        							<ul class="dropdown-menu">
+        								<li class="p2"><a href="#second_noticias">notícias</a></li>
+        								<li class="divider"></li>
+        								<li class="p2"><a href="#">leis</a></li>
+        								<li class="p2"><a href="#">comunidade</a></li>
+        								<li class="p2"><a href="#">ativismo</a></li>
+        								<li class="p2"><a href="#">apoio</a></li>
+        							</ul>
+        					</li>
+        					<li class="p2"><a href="#">reflita</a></li>
+        					<li class="p2"><a href="#projeto">projeto</a></li>
+        				</ul>
+        			</div>
+        		</div>
+        	</nav>
+						
+					<!--<div class="nav projeto"><a href="#projeto">projeto</a></div>
 
 					<div class="nav p1"><a href="#first_relatos">relatos</a></div>
 					<div class="nav p1"><a href="#first_cotidiano">cotidiano</a></div>
@@ -31,13 +66,13 @@
 
 
 				</div>
-			</nav>
+			</nav>-->
 			
 			<!--Parte I - Conhecer-->
 			
 			<section class="planoDeFundo" id="first">
 				<h1 id="conheca" class="firstLineHeading">conheça</h1>
-				<p id="first_intro" class=" first description">A busca incessável por dinheiro pode levar pessoas a tomarem rumos que elas jamais imaginariam.<br> A prostituição é um deles</p>
+				<p id="first_intro" class=" first description">A busca incessável por dinheiro pode levar pessoas a tomarem rumos que elas jamais imaginariam. A prostituição é um deles</p>
 				<div id="first_intro_next" class="first intro"><a href="#first_cotidiano"><img class="seta" src="http://i1098.photobucket.com/albums/g375/Noyukihara/arrow.png"/></a></div>
 				
 				<section class="first video secondLayer" id="first_cotidiano">
@@ -143,7 +178,7 @@
              			</a>
 
              			<a href="">
-             				<img  class="apoiocol-xs-6" src="http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/apoio_zps5dda8c8d.jpg">
+             				<img  class="apoio col-xs-6" src="http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/apoio_zps5dda8c8d.jpg">
              			</a>
 
              	</div>
