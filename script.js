@@ -15,7 +15,6 @@ $(document).ready(function(){
 		$(id).css("display", "block");
 	};
 
-	hide(".p1");
 	hide(".p2");
 
 	/*Função de Abaixar Rápido*/
@@ -33,10 +32,10 @@ $(document).ready(function(){
 	});
 
 	$('#first').click(function(){
-		show("#conheca");
+		/*show("#conheca");
 			$(this).animate({width:"90%"},{"duration": 1000});
-		$("#second").animate({width:"10%"},{"duration": 1000});
-		hide("#transforme");
+		$("#second").animate({width:"10%"},{"duration": 1000});*/
+
 		$("#flor").fadeOut(1000);
 		
 		show(".first");
@@ -46,9 +45,9 @@ $(document).ready(function(){
 	});
 
 	$('#second').click(function(){
-		show("#transforme");
+		/*show("#transforme");
 			$(this).animate({width:"90%"},{"duration": 1000});
-		$("#first").animate({width:"10%"},{"duration": 1000});
+		$("#first").animate({width:"10%"},{"duration": 1000});*/
 		hide("#conheca");
 		$("#flor").fadeOut(1000);
 		hide(".first");

@@ -24,9 +24,6 @@ body{
 }
 
 /*Classes para Trocar*/
-	.first{
-		display: none;
-	}
 
 	.second{
 		display: none;
@@ -59,9 +56,9 @@ body{
 			
 @media (min-width: 768px){
 	.planoDeFundo{
-				width: 50%;
+				width: 100%;
 				min-height: 768px;
-				height: auto;
+				height: 1200px;
 				padding: 0;
 				background-color: #0c0c0c;
 				top: 0;
@@ -78,7 +75,7 @@ body{
 @media (max-width: 768px){
 	.planoDeFundo{
 				width: 100%;
-				height: auto;
+				height: 1200px;
 				padding: 0;
 				background-color: #0c0c0c;
 				top: 0;
@@ -92,6 +89,7 @@ body{
 
 	#first,#second{
 		background-color: background-color: #0c0c0c;
+		height: 1200px;
 	}
 	.first,.second{
 		display: block;
@@ -100,9 +98,9 @@ body{
 
 }			
 
-			.planoDeFundo :hover{
+			/*.planoDeFundo :hover{
 				cursor: pointer;
-			}
+			}*/
 
 			#first{
 				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-2_zps92097d81.png");
@@ -171,8 +169,18 @@ body{
 
 
 			.projeto ,.p1, .p2{
-				float: right;
+				float: left;
 			}
+
+@media (max-width: 768px){
+		.p1{
+			font-size: 0.7em;
+		}
+
+		p{
+			font-size: 0.5em;
+		}
+}
 
 			.top_lisias{
 				display: inline;
@@ -204,6 +212,7 @@ body{
 			#flor :hover{
 				cursor: pointer;
 			}
+
 
 			/*Primeira parte - Conhecer*/			
 			.description{
