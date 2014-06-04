@@ -50,12 +50,8 @@ $(document).ready(function(){
 		$(id).css("display", "block");
 	};
 
-<<<<<<< HEAD
 	var flor;
 	var flor=0;
-=======
-	hide(".p2");
->>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 
 	
 	/*Função de Abaixar Rápido*/
@@ -91,7 +87,6 @@ $(document).ready(function(){
 			flor=1;
 		});
 
-<<<<<<< HEAD
 		$('#second').click(function(){
 			show("#transforme");
 				$(this).animate({width:"100%"},{"duration": 1000}, function(){
@@ -183,43 +178,6 @@ $(document).ready(function(){
 			});
 		};*/
 	};
-=======
-	$('#first').click(function(){
-		/*show("#conheca");
-			$(this).animate({width:"90%"},{"duration": 1000});
-		$("#second").animate({width:"10%"},{"duration": 1000});*/
-
-		$("#flor").fadeOut(1000);
-		
-		show(".first");
-		hide(".second");
-		show(".p1");
-		hide(".p2")
-	});
-
-	$('#second').click(function(){
-		/*show("#transforme");
-			$(this).animate({width:"90%"},{"duration": 1000});
-		$("#first").animate({width:"10%"},{"duration": 1000});*/
-		hide("#conheca");
-		$("#flor").fadeOut(1000);
-		hide(".first");
-		show(".second");
-		show(".p2");
-		hide(".p1");
-	});
-		
-	$('#logo').click(function(){
-		$("#first").animate({width:"50%"},{"duration": 1000});
-		$("#second").animate({width:"50%"},{"duration": 1000});
-		show("h1");
-		$("#flor").fadeIn(2000);
-		hide(".first");
-		hide(".second");
-		hide(".p1");
-		hide(".p2");
-	});
->>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 });			
 
 
