@@ -28,10 +28,13 @@ body{
 	padding-left: 15px;
 }
 /*Classes para Trocar*/
+<<<<<<< HEAD
 @media(min-width: 768px){	
 	.first{
 		display: none;
 	}
+=======
+>>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 
 	.second{
 		display: none;
@@ -83,6 +86,24 @@ body{
 					float: left;
 				}
 			}
+<<<<<<< HEAD
+=======
+			
+@media (min-width: 768px){
+	.planoDeFundo{
+				width: 100%;
+				min-height: 768px;
+				height: 1200px;
+				padding: 0;
+				background-color: #0c0c0c;
+				top: 0;
+				display: inline;
+				float: left;
+				
+				background-attachment: fixed;
+				background-size: cover;
+				background-repeat: no-repeat;
+>>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 
 			@media(max-width: 1023px){
 				.planoDeFundo{
@@ -91,9 +112,19 @@ body{
 					float: left;
 				}
 			}
+<<<<<<< HEAD
 			.planoDeFundo{
 				min-height: 2000px;
 				height: auto;
+=======
+}
+
+@media (max-width: 768px){
+	.planoDeFundo{
+				width: 100%;
+				height: 1200px;
+				padding: 0;
+>>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 				background-color: #0c0c0c;
 				top: 0;
 				padding: 0px;
@@ -102,12 +133,24 @@ body{
 				background-attachment: fixed;
 				background-size: cover;
 				background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+			}
+
+	#first,#second{
+		background-color: background-color: #0c0c0c;
+		height: 1200px;
+	}
+	.first,.second{
+		display: block;
+	}
+>>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 
 			}
 
-			.planoDeFundo :hover{
+			/*.planoDeFundo :hover{
 				cursor: pointer;
-			}
+			}*/
 
 			#first{
 				background-image:url("http://i1248.photobucket.com/albums/hh490/Pollyanna_Cunha/Semti3010tulo-2_zps92097d81.png");
@@ -188,7 +231,21 @@ body{
 				float: left;
 			}
 
+<<<<<<< HEAD
 			/*.top_lisias{
+=======
+@media (max-width: 768px){
+		.p1{
+			font-size: 0.7em;
+		}
+
+		p{
+			font-size: 0.5em;
+		}
+}
+
+			.top_lisias{
+>>>>>>> d741fc7a78160f6ef1c8f979a1d9dc69307924b6
 				display: inline;
 				margin: auto;
 				width: 14.28%;
@@ -218,6 +275,7 @@ body{
 			#flor :hover{
 				cursor: pointer;
 			}
+
 
 			/*Primeira parte - Conhecer*/			
 			.description{
