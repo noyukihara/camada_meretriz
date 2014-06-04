@@ -13,11 +13,11 @@
 
 
 	body{
-		padding: 10px;
 		color: #ffffff;
 		background-color: #0c0c0c;
 		font-family: "Oxygen",sans-serif;
 		font-weight: 400;
+		padding: 0% 10% 0% 10%;
 	}
 
 	h1{

@@ -12,18 +12,23 @@
   src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 
-html{
-	font-size: 62.5%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 body{
 	background-color: #0c0c0c;
 	font-family: "Oxygen",sans-serif;
 	font-weight: 400;
+	color: #ffffff;
+	overflow-x: hidden;
+	overflow-y: scroll; 
 }
 
+#logo{
+	display: block;
+	width: 50%;
+	padding-left: 15px;
+}
 /*Classes para Trocar*/
+@media(min-width: 768px){	
 	.first{
 		display: none;
 	}
@@ -31,74 +36,74 @@ body{
 	.second{
 		display: none;
 	}
-	
-			.container{
-				max-width: 2100px;
-				width: 100%;
-				margin: auto;
-				overflow: auto;
-				.clearfix:before,
-				.clearfix:after {
-   					content: " ";
-   					display: table;
-				}
- 
-				.clearfix:after {
-   					clear: both;
-				}
- 
-				.clearfix {
-				   *zoom: 1;
-				}
-
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box; 
-				font-family: "Oxygen",sans-serif;
-			}
-			
-@media (min-width: 768px){
-	.planoDeFundo{
-				width: 50%;
-				min-height: 768px;
-				height: auto;
-				padding: 0;
-				background-color: #0c0c0c;
-				top: 0;
-				display: inline;
-				float: left;
-				
-				background-attachment: fixed;
-				background-size: cover;
-				background-repeat: no-repeat;
-
-			}
 }
 
-@media (max-width: 768px){
-	.planoDeFundo{
-				width: 100%;
-				height: auto;
-				padding: 0;
-				background-color: #0c0c0c;
-				top: 0;
-				display: block;
-				float: left;
-				
-				background-attachment: fixed;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-
-	#first,#second{
-		background-color: background-color: #0c0c0c;
-	}
-	.first,.second{
+@media(max-width: 1023px){	
+	.first{
 		display: block;
 	}
 
+	.second{
+		display: block;
+	}
+}
+@media(min-width:1024px){
+	.flor{
+		display: block;
+		position: fixed;
 
-}			
+		height: auto;
+		background-color:#ffffff;
+		opacity: 0.5;
+		border-radius: 100%;
+		padding: 20px;
+		top: 50%;
+		z-index: 100;
+	}
+}
+@media(max-width:1023px){
+	.flor{
+		display: none;
+	}
+
+	#first_footer{
+		display: none;
+	}
+
+	
+}
+	
+			.container-fluid{
+				padding: 0px;
+			}
+			@media(min-width: 768px){
+				.planoDeFundo{
+					width: 50%;
+					display: inline;
+					float: left;
+				}
+			}
+
+			@media(max-width: 1023px){
+				.planoDeFundo{
+					width: 100%;
+					display: block;
+					float: left;
+				}
+			}
+			.planoDeFundo{
+				min-height: 2000px;
+				height: auto;
+				background-color: #0c0c0c;
+				top: 0;
+				padding: 0px;
+
+				
+				background-attachment: fixed;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+			}
 
 			.planoDeFundo :hover{
 				cursor: pointer;
@@ -115,19 +120,25 @@ body{
 
 
 			/**Estrutura do Site*/
-			#logo{
-				display: block;
-				float: left;
-				margin-left: 15px;
-				width: 70%;
-				height: auto; 
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
 			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 12.5%;
+				width: 75%;
+				height: 75%;
+			}
+
 			h1{
 				display: block;
 				text-align: center;
 				font-size: 4em;
 				width: auto;
-				color: #ffffff;
 				padding-top: 100px;
 				text-shadow:0 0 10px rgba(0,0,0,0.7);
 				font-family: "Oxygen",sans-serif;
@@ -148,14 +159,17 @@ body{
 				height: 100px;
 				z-index: 100;
 				overflow: hidden;
-			}*/
+			}
 
 			.nav{
+				display: inline;
+				margin: auto;
+				width: 14.28%;
 				font-size: 2em;
 				text-align: center;
 				color: #ffffff;
 				padding-top: 10px;
-			}
+			}*/
 
 			p{
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
@@ -171,10 +185,10 @@ body{
 
 
 			.projeto ,.p1, .p2{
-				float: right;
+				float: left;
 			}
 
-			.top_lisias{
+			/*.top_lisias{
 				display: inline;
 				margin: auto;
 				width: 14.28%;
@@ -186,7 +200,7 @@ body{
 
 			.top_lisias:hover{
 				cursor: pointer;
-			}
+			}*/
 
 			/*Content*/
 			#flor{
@@ -211,7 +225,6 @@ body{
 				padding:10px 12.55% 10px 12.55%;
 				color:#ffffff;
 				line-height: 1.5em;
-				font-size: 1.5em;
 
 
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
@@ -219,9 +232,15 @@ body{
 				box-sizing:  3px 3px 5px 6px #ccc;
 			}
 			
-					
+			.intro{
+				width: 100%;
+				z-index: 50;
+				text-align: center;
+				padding: 20px;
+				padding-top: 15%;
+			}
+			
 			.secondLayer{
-				background-color: #2D2045;
 				-webkit-box-sizing:  3px 0px 0px 0px #ccc;
 				-moz-box-sizing:  3px 0px 0px 0px #ccc;
 				box-sizing:  3px 0px 0px 0px #ccc;
@@ -229,40 +248,70 @@ body{
 				float: left;
 				z-index: 2;				
 			}
-			#cotidiano_video{
+			/*#cotidiano_video{
 				width: 100%;
 				margin: auto;
 				display: block;
-			}
+			}*/
 			
 
-			.share{
+			/*.share{
 				width: 44px;
 				margin:5px 20px 0 0;
 				float:right;
 				display: block;
-			}
+			}*/
 
 			/*Galeria*/
 			.relatos{
 				top: 0px;
-				width: 100%;
-				background-color: #2D2045;
+				/*width: 100%;*/
 				clear: both;
 			}
-			.gallery{
+			/*.gallery{
 				width: 100%;
-				display: block;	
+				float: left;
+				display: block;
+				margin: auto;
 			}
 
 			.galleryItem{
-				padding-top: 15px;
-			}
+				display: block;
+				float: left;
+				margin: auto;
+				margin: 0% 3% 2% 3%;
+				
+
+			}*/
 			/*DIVS da galeria*/
-			img{
+			.imgItem{
 				display: block;
 				width: 100%;
 			}
+			/*#repOne{
+				background-color: #ffffff;
+				}
+			#repTwo{
+				background-color: #ffffff;
+			}
+			#repThree{
+				background-color: #ffffff;
+			}
+			#repFour{
+				background-color: #ffffff;
+			}
+			#repFive{
+				background-color: #ffffff;
+			}
+			#repSix{
+				background-color: #ffffff;
+			}
+			#repSeven{
+				background-color: #ffffff;
+			}
+			#repEight{
+				background-color: #ffffff;
+			}*/
 
 			.galleryItem p{
 				display: none;
@@ -271,12 +320,13 @@ body{
 			.galleryItem:hover p{
 				display: block;
 				position: absolute;
-				top: 30%;
-				font-size: 1.5em;
+				top: 10%;
+				font-size: 1.3em;
 				font-weight: bold;
 				z-index: 100;
 				color: #ffffff;
 				padding: 5%;
+				text-shadow:0 0 10px rgba(0,0,0,0.7);
 				-webkit-box-sizing:  3px 3px 5px 6px #ccc;
 				-moz-box-sizing:  3px 3px 5px 6px #ccc;
 				box-sizing:  3px 3px 5px 6px #ccc;
@@ -290,19 +340,32 @@ body{
 				width: 30%;
 			}*/
 
-			.block{
-				float: left;
-				display: block;
-			}
-
 			.colab_photo{
 				width: 100%;
 				border-radius: 100%;
 			}
 
+			#footer{
+				background-color: #0c0c0c;
+				margin-top: 50px;
+				text-shadow:0 0 10px rgba(0,0,0,0.7);
+			}
+
 			/* PARTE 2 - TRANSFOME*/
 
-			/*.leis{
+			#second_noticias{
+				height:800px;
+				width: 100%;
+				background-color: #0B0B3B;
+			}
+
+			#fotos_noticias{
+				width: 20%;
+				height: 20%;
+	            position: left;
+			}
+
+			.leis{
 				display: block;
 				float: left;
 				margin: auto;
@@ -324,5 +387,5 @@ body{
 				display: block;
 				float: right;
 				margin: auto;
-			}*/
+			}
 
