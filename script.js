@@ -84,17 +84,63 @@ $(document).ready(function(){
 		if ($(window).width() >= 1024 ) {
 			$("body").css("overflow", "hidden"); 
 			hide(".p1");
-			hide(".p2"); 
+			hide(".p2");
+			hide("#pullRight");
+			hide("#pullLeft");
+			show("#static"); 
 						
 			$('#first').click(function(){
 				show("#conheca");
 					$(this).animate({width:"100%"},{"duration": 1000,}, function(){
-						$("#second").css("display", "none");
+						$("#second").css("display", "none");					
 					});
-				$("#second").animate({width:"0%"},{"duration": 1000});
-				hide("#transforme");
+					show("#pullRight");
+					hide("#pullLeft");
+					hide("#static");
+				$("#second").animate({width:"0%"},{"duration": 1000}, function(){
+					hide("#transforme");
+				});
+				
 				$(".flor").animate({left: "+50%"}, 1000);
 				$(".flor").css("cursor", "pointer");			
+				
+				
+				$('#pullRight').click(function(){
+					show("#transforme");
+					$("#second").animate({width:"100%"},{"duration": 1000}, function(){
+						$("#first").css("display", "none");
+					});
+					show("#pullLeft");
+					hide("#pullRight");
+					hide("#static");
+					$("#first").animate({width:"0%"},{"duration": 1000}, function(){
+						hide("#conheca");
+						});						
+					$(".flor").animate({left: "-50%"}, 1000);
+					hide(".first");
+					show(".second");
+					show(".p2");
+					hide(".p1");
+
+					$('#pullLeft').click(function(){
+						show("#conheca");
+						$("#first").animate({width:"100%"},{"duration": 1000,}, function(){
+							$("#second").css("display", "none");
+							});
+							show("#pullRight");
+							hide("#pullLeft");
+							hide("#static");
+						$("#second").animate({width:"0%"},{"duration": 1000}, function(){
+							hide("#transforme");
+						});
+						
+						$(".flor").animate({left: "+50%"}, 1000);
+					show(".first");
+					hide(".second");
+					show(".p1");
+					hide(".p2");
+					});
+				});
 				
 				show(".first");
 				hide(".second");
@@ -104,15 +150,58 @@ $(document).ready(function(){
 				$('html, body').animate({scrollTop : 0},800);
 			});
 
-			$('#second').click(function(){
+			$("#second").click(function(){
 				show("#transforme");
 					$(this).animate({width:"100%"},{"duration": 1000}, function(){
 						$("#first").css("display", "none");
+						show("#pullLeft");
+						hide("#pullRight");
+						hide("static");
 					});
-				$("#first").animate({width:"0%"},{"duration": 1000});
-				hide("#conheca");
+				$("#first").animate({width:"0%"},{"duration": 1000}, function(){
+					show("#transforme");
+				});
+				
 				$(".flor").animate({left: "-50%"}, 1000);
 				$(".flor").css("cursor", "pointer");
+				$('#pullLeft').click(function(){
+						show("#conheca");
+						$("#first").animate({width:"100%"},{"duration": 1000,}, function(){
+							$("#second").css("display", "none");
+							});
+							show("#pullRight");
+							hide("#pullLeft");
+							hide("#static");
+						$("#second").animate({width:"0%"},{"duration": 1000}, function(){
+							hide("#transforme");
+						});
+						
+						$(".flor").animate({left: "+50%"}, 1000);
+				show(".first");
+				hide(".second");
+				show(".p1");
+				hide(".p2");
+
+				$('#pullRight').click(function(){
+					show("#transforme");
+					$("#second").animate({width:"100%"},{"duration": 1000}, function(){
+						$("#first").css("display", "none");
+					});
+					show("#pullLeft");
+					hide("#pullRight");
+					hide("#static");
+					$("#first").animate({width:"0%"},{"duration": 1000}, function(){
+						hide("#conheca");
+						});						
+					$(".flor").animate({left: "-50%"}, 1000);
+					hide(".first");
+					show(".second");
+					show(".p2");
+					hide(".p1");
+				});
+
+			});
+				
 				hide(".first");
 				show(".second");
 				show(".p2");
@@ -127,6 +216,10 @@ $(document).ready(function(){
 				$("#second").animate({width:"50%"},{"duration": 1000});
 				show("h1");
 				$(".flor").animate({left: "0%"},{"duration": 1000});
+				
+				hide("#pullRight");
+				hide("#pullLeft");
+				show("#static"); 
 				hide(".first");
 				hide(".second");
 				hide(".p1");
