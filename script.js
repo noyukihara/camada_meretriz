@@ -50,6 +50,76 @@ $(document).ready(function(){
 		$(id).css("display", "block");
 	};
 
+	var florEsquerda=function(){
+		if (flor == 1) {
+				$(".flor").click(function(){
+					show("#transforme");
+					$("#second").animate({width:"100%"},{"duration": 1000}, function(){
+						$("#first").css("display", "none");
+						flor=2;
+					});
+					$("#first").animate({width:"0%"},{"duration": 1000});
+					hide("#conheca");
+					$(".flor").animate({left: "-50%"}, 1000);
+					hide(".first");
+					show(".second");
+					show(".p2");
+					hide(".p1");
+
+				});
+			}else if(flor == 2){
+				$(".flor").click(function(){
+					show("#conheca");
+					$("#first").animate({width:"100%"},{"duration": 1000,}, function(){
+						flor=1;
+						$("#second").css("display", "none");
+					});
+					$("#second").animate({width:"0%"},{"duration": 1000});
+					hide("#transforme");
+					$(".flor").animate({left: "+50%"}, 1000);
+					show(".first");
+					hide(".second");
+					show(".p1");
+					hide(".p2")
+				});
+			};
+	};
+
+	var florDireita=function(){
+		if (flor == 1) {
+				$('.flor').click(function(){
+					show("#transforme");
+					$("#second").animate({width:"100%"},{"duration": 1000}, function(){
+						$("#first").css("display", "none");
+						flor=0;
+					});
+					$("#first").animate({width:"0%"},{"duration": 1000});
+					hide("#conheca");
+					$(".flor").animate({left: "-50%"}, 1000);
+					hide(".first");
+					show(".second");
+					show(".p2");
+					hide(".p1");
+
+				});
+			}else if(flor == 2){
+				$('.flor').click(function(){
+					show("#conheca");
+					$("#first").animate({width:"100%"},{"duration": 1000,}, function(){
+						flor=0;
+						$("#second").css("display", "none");
+					});
+					$("#second").animate({width:"0%"},{"duration": 1000});
+					hide("#transforme");
+					$(".flor").animate({left: "+50%"}, 1000);
+					show(".first");
+					hide(".second");
+					show(".p1");
+					hide(".p2")
+				});
+			};
+	}
+
 	var flor;
 	var flor=0;
 
@@ -70,7 +140,9 @@ $(document).ready(function(){
 	
 	if ($(window).width() >= 1024 ) {
 		hide(".p1");
-		hide(".p2");  
+		hide(".p2"); 
+		$("body").css("overflow", "hidden"); 
+		
 		$('#first').click(function(){
 			show("#conheca");
 				$(this).animate({width:"100%"},{"duration": 1000,}, function(){
@@ -79,12 +151,17 @@ $(document).ready(function(){
 			$("#second").animate({width:"0%"},{"duration": 1000});
 			hide("#transforme");
 			$(".flor").animate({left: "+50%"}, 1000);
+			$(".flor").css("cursor", "pointer");			
 			
 			show(".first");
 			hide(".second");
 			show(".p1");
 			hide(".p2")
 			flor=1;
+			$("body").css("overflow", "auto"); 
+			$('html, body').animate({scrollTop : 0},800);
+
+			florEsquerda();
 		});
 
 		$('#second').click(function(){
@@ -95,14 +172,20 @@ $(document).ready(function(){
 			$("#first").animate({width:"0%"},{"duration": 1000});
 			hide("#conheca");
 			$(".flor").animate({left: "-50%"}, 1000);
+			$(".flor").css("cursor", "pointer");
 			hide(".first");
 			show(".second");
 			show(".p2");
 			hide(".p1");
 			flor=2;
+			$("body").css("overflow", "auto");		
+			$('html, body').animate({scrollTop : 0},800);
+
+			florDireita();
 		});
 			
 		$('#logo').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
 			$("#first").animate({width:"50%"},{"duration": 1000});
 			$("#second").animate({width:"50%"},{"duration": 1000});
 			show("h1");
@@ -112,14 +195,18 @@ $(document).ready(function(){
 			hide(".p1");
 			hide(".p2");
 			flor=0;
+			$(".flor").css("cursor", "initial");
+			$("body").css("overflow", "hidden");
+
+			$('html, body').animate({scrollTop : 0},800); 
 		});
 
-		if (flor == 1) {
-			hide("body");
-				/*$('.flor').click(function(){
+			/*if (flor == 1) {
+				$('.flor').click(function(){
 					show("#transforme");
 					$("#second").animate({width:"100%"},{"duration": 1000}, function(){
 						$("#first").css("display", "none");
+						flor=2;
 					});
 					$("#first").animate({width:"0%"},{"duration": 1000});
 					hide("#conheca");
@@ -128,13 +215,14 @@ $(document).ready(function(){
 					show(".second");
 					show(".p2");
 					hide(".p1");
-				});*/
-			};/*else if(flor == "gotoconheca"){
-			$(".flor").css("opacity", "1");
-				/*$('.flor').click(function(){
+
+				});
+			}else if(flor == 2){
+				$('.flor').click(function(){
 					show("#conheca");
 					$("#first").animate({width:"100%"},{"duration": 1000,}, function(){
-					$("#second").css("display", "none");
+						flor=1;
+						$("#second").css("display", "none");
 					});
 					$("#second").animate({width:"0%"},{"duration": 1000});
 					hide("#transforme");
@@ -144,7 +232,7 @@ $(document).ready(function(){
 					show(".p1");
 					hide(".p2")
 				});
-			};
+			};*/
 
 		/*if(position<=width){
 				$('.flor').click(function(){
