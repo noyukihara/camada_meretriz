@@ -25,6 +25,10 @@
 	.galleryItem p{
 				display:block;
 			}
+
+	.sobre{
+		display: none;
+	}
 }
 
 
@@ -54,12 +58,25 @@ body{
 }
 
 @media(max-width: 1023px){	
+	.planoDeFundo{
+		width: 100%;
+		display: block;
+		float: left;
+	}
 	.first{
 		display: block;
 	}
 
 	.second{
 		display: block;
+	}
+
+	.flor{
+		display: none;
+	}
+
+	#first_footer{
+		display: none;
 	}
 }
 @media(min-width:1024px){
@@ -76,19 +93,7 @@ body{
 		z-index: 100;
 	}
 }
-@media(max-width:1023px){
-	.flor{
-		display: none;
-	}
-
-	#first_footer{
-		display: none;
-	}
-
-	
-}
-	
-			.container-fluid{
+		.container-fluid{
 				padding: 0px;
 			}
 			@media(min-width: 768px){
@@ -99,13 +104,7 @@ body{
 				}
 			}
 
-			@media(max-width: 1023px){
-				.planoDeFundo{
-					width: 100%;
-					display: block;
-					float: left;
-				}
-			}
+
 			.planoDeFundo{
 				min-height: 2000px;
 				height: auto;
