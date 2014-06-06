@@ -306,7 +306,8 @@ body{
 			.imgItem{
 				display: block;
 				width: 100%;
-				
+				background-color:#ffffff;
+				padding: 10px;
 			}
 			
 
