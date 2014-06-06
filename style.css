@@ -323,14 +323,14 @@ body{
 				width: 100%;
 				border-radius: 100%;
 			}
-			.nomes{
-				position: center;
+			#nomes{
+				text-align: center;
 			}
 
 			.logos{
 				width: 30%;
 				float: center;
-				
+
 			}
 
 			#footer{
