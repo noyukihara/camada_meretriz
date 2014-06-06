@@ -216,6 +216,12 @@ body{
 			}*/
 
 			/*Content*/
+			.nomes{
+				text-align: center;
+				position: relative;
+				width: 100%;
+			}
+
 			#flor{
 				display: block;
 				position: absolute;
@@ -352,7 +358,10 @@ body{
 
 			.logos{
 				width: 35%;
-				padding-left: 10%;
+				display: inline-block;
+				margin: auto;
+				margin-left: 10%;
+				max-width: 44px;
 
 			}
 
