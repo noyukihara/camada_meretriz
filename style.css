@@ -306,20 +306,28 @@ body{
 			.imgItem{
 				display: block;
 				width: 100%;
+				
+			}
+			.imgGaleria{
+				display: block;
+				width: 100%;
+				margin-bottom: 30px;
 				background-color:#ffffff;
-				padding: 10px;
+				padding: 5px;
+
 			}
 			
 
 			.galleryItem p{
 				display: none;
+				
 			}
 
 			.galleryItem:hover p{
 				display: block;
 				position: absolute;
 				top: 10%;
-				font-size: 1.3em;
+				font-size: 1.1em;
 				font-weight: bold;
 				z-index: 100;
 				color: #ffffff;
