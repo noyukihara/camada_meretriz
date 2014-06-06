@@ -19,6 +19,9 @@
 	.description{
 		font-size: 1em;
 	}
+	.galleryItem p{
+				display:block;
+			}
 }
 
 
