@@ -81,7 +81,7 @@ $(document).ready(function(){
 			});
 		};*/
 	
-		if ($(window).width() >= 1024 ) {
+		if ($(window).width() >= 1000 ) {
 			$("body").css("overflow", "hidden"); 
 			hide(".p1");
 			hide(".p2");
