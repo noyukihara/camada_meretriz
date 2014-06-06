@@ -11,6 +11,15 @@
   font-weight: 700;
   src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+@media(max-width: 1023px){	
+	h1{
+		font-size:1.2em;
+	}
+
+	.description{
+		font-size: 1em;
+	}
+}
 
 
 body{
