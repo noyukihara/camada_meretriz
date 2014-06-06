@@ -288,31 +288,9 @@ body{
 			.imgItem{
 				display: block;
 				width: 100%;
+				padding-bottom: 30px;
 			}
-			/*#repOne{
-				background-color: #ffffff;
-				}
-			#repTwo{
-				background-color: #ffffff;
-			}
-			#repThree{
-				background-color: #ffffff;
-			}
-			#repFour{
-				background-color: #ffffff;
-			}
-			#repFive{
-				background-color: #ffffff;
-			}
-			#repSix{
-				background-color: #ffffff;
-			}
-			#repSeven{
-				background-color: #ffffff;
-			}
-			#repEight{
-				background-color: #ffffff;
-			}*/
+			
 
 			.galleryItem p{
 				display: none;
