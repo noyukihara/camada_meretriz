@@ -155,7 +155,7 @@ $(document).ready(function(){
 						$("#first").css("display", "none");
 						show("#pullLeft");
 						hide("#pullRight");
-						hide("static");
+						hide("#static");
 					});
 				$("#first").animate({width:"0%"},{"duration": 1000}, function(){
 					show("#transforme");
