@@ -147,7 +147,6 @@ $(document).ready(function(){
 				show(".p1");
 				hide(".p2")
 				$("body").css("overflow", "auto"); 
-				$('html, body').animate({scrollTop : 0},800);
 			});
 
 			$("#second").click(function(){
@@ -207,7 +206,6 @@ $(document).ready(function(){
 				show(".p2");
 				hide(".p1");
 				$("body").css("overflow", "auto");		
-				$('html, body').animate({scrollTop : 0},800);
 			});
 				
 			$('#logo').click(function(){
@@ -226,8 +224,6 @@ $(document).ready(function(){
 				hide(".p2");
 				$(".flor").css("cursor", "initial");
 				$("body").css("overflow", "hidden");
-
-				$('html, body').animate({scrollTop : 0},800); 
 			});
 
 			
