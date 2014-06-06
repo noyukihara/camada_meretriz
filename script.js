@@ -210,10 +210,10 @@ $(document).ready(function(){
 				
 			$('#logo').click(function(){
 				$("#first").animate({width:"50%"},{"duration": 1000, complete:function(){
-					$('html, body').animate({scrollTop : 0},800);
+					$('html, body').animate({scrollTop : 0},1);
 				}});
 				$("#second").animate({width:"50%"},{"duration": 1000, complete:function(){
-					$('html, body').animate({scrollTop : 0},800);
+					$('html, body').animate({scrollTop : 0},1);
 				}});
 				show("h1");
 				$(".flor").animate({left: "0%"},{"duration": 1000});
