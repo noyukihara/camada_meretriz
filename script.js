@@ -209,9 +209,12 @@ $(document).ready(function(){
 			});
 				
 			$('#logo').click(function(){
-				$('html, body').animate({scrollTop : 0},800);
-				$("#first").animate({width:"50%"},{"duration": 1000});
-				$("#second").animate({width:"50%"},{"duration": 1000});
+				$("#first").animate({width:"50%"},{"duration": 1000, complete:function(){
+					$('html, body').animate({scrollTop : 0},800);
+				}});
+				$("#second").animate({width:"50%"},{"duration": 1000, complete:function(){
+					$('html, body').animate({scrollTop : 0},800);
+				}});
 				show("h1");
 				$(".flor").animate({left: "0%"},{"duration": 1000});
 				
